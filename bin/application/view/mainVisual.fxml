@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.mainVisualController">
+   <center>
+      <SplitPane dividerPositions="0.46275071633237824" prefHeight="760.0" prefWidth="667.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="758.0" prefWidth="513.0">
+               <children>
+                  <GridPane layoutX="13.0" layoutY="77.0" prefHeight="618.0" prefWidth="271.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.14285714285714" minWidth="10.0" prefWidth="134.85719408307756" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.57140241350447" minWidth="10.0" prefWidth="150.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Flooring" GridPane.rowIndex="6" />
+                        <Label text="Ceiling Height" GridPane.rowIndex="7" />
+                        <Label text="Fitness Center" GridPane.rowIndex="12" />
+                        <Label GridPane.rowIndex="8" />
+                        <Label text="Location" GridPane.rowIndex="9" />
+                        <Label text="Area" GridPane.rowIndex="10" />
+                        <Label text="Appliance Material" GridPane.rowIndex="11" />
+                        <Label text="Bathroom #" GridPane.rowIndex="1" />
+                        <Label text="Dog Park" GridPane.rowIndex="2" />
+                        <Label text="Cats Allowed" GridPane.rowIndex="3" />
+                        <Label text="Bedroom #" />
+                        <Label text="Dogs Allowed" GridPane.rowIndex="4" />
+                        <Label text="Counter tops" GridPane.rowIndex="5" />
+                        <TextField fx:id="bedNumField" GridPane.columnIndex="1" />
+                        <TextField fx:id="bathNumField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="dogParkField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <RadioButton fx:id="catAllowedField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <RadioButton fx:id="dogAllowedField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Washer/Dryer" GridPane.rowIndex="8" />
+                        <TextField fx:id="CeilingHeightField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <RadioButton fx:id="fitnessCenterField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                        <RadioButton fx:id="washerDryerField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <ComboBox fx:id="areaBox" prefWidth="150.0" promptText="Not Listed" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                        <ComboBox fx:id="applianceMatBox" prefWidth="150.0" promptText="Not Listed" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                        <Label text="Pool" GridPane.rowIndex="13" />
+                        <RadioButton fx:id="poolField" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                        <ComboBox fx:id="counterMatBox" prefWidth="150.0" promptText="Not Listed" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <ComboBox fx:id="flooringMatBox" prefWidth="150.0" promptText="Not Listed" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="14.0" layoutY="14.0" text="Features">
+                     <font>
+                        <Font name="Microsoft PhagsPa" size="34.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="59.0" prefHeight="9.0" prefWidth="931.0" />
+                  <Button fx:id="generateButton" layoutX="13.0" layoutY="718.0" mnemonicParsing="false" onAction="#OkBtn" text="Generate" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="758.0" prefWidth="582.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Advertisement">
+                     <font>
+                        <Font name="Microsoft PhagsPa" size="34.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="-206.0" layoutY="59.0" prefHeight="9.0" prefWidth="931.0" />
+                  <TextFlow fx:id="advertisement" layoutX="12.0" layoutY="117.0" prefHeight="579.0" prefWidth="344.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>
